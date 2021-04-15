@@ -1,0 +1,175 @@
+div.cnt01{}
+div.cnt01 header{
+    margin-top: 120px;
+}
+div.cnt01 header h2{
+    width: calc(100% / 12 * 5);
+    margin: 0 auto;
+}
+
+div.cnt01 header h3{
+    width: calc(100% / 12 * 6);
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+div.cnt01 section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+div.cnt01 section article{
+    width: calc(100% / 3 - 20px);
+    position: relative;
+    cursor: pointer;
+    /*3d형식으로 만듦*/
+    perspective: 1000px;
+}
+div.cnt01 section article .image{
+    width: 100%;
+    height: 320px;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+div.cnt01 section article .image.i1{background-image: url(../image/index_cnt01_i1.jpg.jpg);}
+div.cnt01 section article .image.i2{background-image: url(../image/index_cnt01_i2.jpg.jpg);}
+div.cnt01 section article .image.i3{background-image: url(../image/index_cnt01_i3.jpg.jpg);}
+div.cnt01 section article:hover .image{
+    transform: rotateY(180deg);
+}
+div.cnt01 section article:hover .texts{
+    transform: rotateY(0deg);
+    
+}
+div.cnt01 section article .texts{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1d2548;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: transform 1s;
+    cursor: pointer;
+}
+div.cnt01 section article .texts h2{
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 50%;
+    transform: translate(0,-50%);
+    
+}
+
+div.cnt02{
+    position: relative;
+}
+div.cnt02 header{
+    position: absolute;
+    width: calc(100% / 4);
+    left: calc(100% / 12);
+    top:50%;
+    transform: translate(0,-50%);
+}
+div.cnt02 header h2{
+    text-align: none;
+}
+div.cnt02 header h3{}
+div.cnt02 header p{
+    margin-top: 40px;
+    height: 200px;
+    overflow: hidden;
+}
+div.cnt02 header .btn{
+    margin-top: 120px;
+}
+div.cnt02 section{
+    width: calc(100%/12 * 10);
+    margin: 0 auto;
+    height: 680px;
+}
+div.cnt02 section .image{
+    width: 100%;
+    height: 100%;
+    
+}
+div.cnt02 section .image{
+    background-image: url(../image/index_cnt02_image.png);
+}
+
+div.cnt03{}
+div.cnt03 header{
+    width: calc(100% / 12 * 4);
+}
+div.cnt03 header h2{}
+div.cnt03 header h3{}
+div.cnt03 section{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+div.cnt03 section article{
+    width: calc(100% / 3 - 20px);
+}
+div.cnt03 section article .image{
+    width: 100%;
+    height: 360px;
+}
+div.cnt03 section article .image.i1{background-image: url(../image/index_cnt03_i1.jpg);}
+div.cnt03 section article .image.i2{background-image: url(../image/index_cnt03_i2.jpg);}
+div.cnt03 section article .image.i3{background-image: url(../image/index_cnt03_i3.jpg);}
+div.cnt03 section article .texts{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+div.cnt03 section article .texts h2::before{
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #033;
+}
+div.cnt03 section article .texts h2{
+    font-size: 28px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+div.cnt03 section article .texts h3{
+    font-size: 24px;
+    color: #666;
+    line-height: 80px;
+}
+div.cnt03 section article .texts p{
+    height: 60px;
+    overflow: hidden;
+}
+div.cnt03 .btn{
+    text-align: right;
+    margin-top: 60px;
+}
+
+div.bnrWrap{
+    height: 480px;
+    background-image: url(../image/index_bnr01.jpg);
+}
+
+div.bnrWrap .bnr01{
+    text-align: center;
+}
+div.bnrWrap .bnr01 h2{
+    padding-top: 180px;
+    color: #fff;
+}
+div.bnrWrap .bnr01 button{
+    margin-top: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    font-weight: 400;
+}

@@ -1,0 +1,6 @@
+@media(max-width:920px){
+div.cnt02 header p{
+    height: 100px;
+    overflow: hidden;
+}
+}
