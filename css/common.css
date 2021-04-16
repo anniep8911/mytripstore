@@ -361,3 +361,45 @@ div.ftrWrap footer .fl p {
 div.ftrWrap footer .fr dl dd {
     text-transform: lowercase;
 }
+
+@media (min-width: 420px) and (max-width: 780px){
+    div.ftrWrap footer {
+        width: 100%;
+        padding: 30px 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    div.ftrWrap footer .fl p {
+        display: none;
+    }
+    div.ftrWrap footer .fm{
+        width: 50%;
+    }
+    
+    
+    div.ftrWrap footer .fr{
+        display: none;
+        
+    } 
+    
+}
+@media (min-width: 0) and (max-width: 420px){
+    
+    div.ftrWrap footer {
+        width: 100%;
+        padding: 30px 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    div.ftrWrap footer .fl p {
+        display: none;
+    }
+    div.ftrWrap footer .fm{
+        width: 50%;
+    }
+    div.ftrWrap footer .fr{
+        display: none;
+    } 
+    
+    
+}

@@ -1,0 +1,137 @@
+@media (min-width: 420px) and (max-width: 780px) {
+  div.mnWrap {
+    height: 800px;
+  }
+  div.mnWrap main {
+    padding: 260px 90px 0;
+  }
+
+  div.cnt01 section {
+    flex-wrap: wrap;
+    height: 360px;
+    row-gap: 25px;
+    overflow: hidden;
+  }
+  div.cnt01 section article {
+    width: calc(50% - 20px);
+    margin-top: 30px;
+  }
+  div.cntWrap .content.cnt02 {
+    margin-top: 80px;
+  }
+  div.cntWrap .content.cnt02 header h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  div.cntWrap .content.cnt02 header p {
+    display: none;
+  }
+  div.cntWrap .content.cnt02 section {
+    width: 100%;
+    height: 480px;
+  }
+
+  div.cntWrap .content.cnt03 {
+    margin-top: 80px;
+  }
+  div.cntWrap .content.cnt03 section article h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  div.cntWrap .content.cnt03 section article h3 {
+    font-size: 15px;
+    line-height: 40px;
+  }
+  div.cntWrap .content.cnt03 .btn {
+    margin-top: 40px;
+  }
+
+  div.bnrWrap {
+    margin-top: 80px;
+    height: 380px;
+  }
+  div.bnrWrap .bnr01 h2 {
+    padding-top: 120px;
+  }
+}
+@media (min-width: 0) and (max-width: 420px) {
+  div.mnWrap {
+    height: 440px;
+  }
+  div.mnWrap main {
+    padding-top: 180px;
+  }
+  div.mnWrap main header h2 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  div.mnWrap main header h3 {
+    display: none;
+  }
+
+  div.cntWrap .content {
+    margin-top: 40px;
+  }
+  div.cntWrap .content.cnt01 header {
+    margin-top: 40px;
+  }
+  div.cntWrap .content.cnt01 header h2 {
+    font-size: 20px;
+  }
+  div.cntWrap .content.cnt01 header h3 {
+    display: none;
+  }
+  div.cntWrap .content.cnt01 section {
+    margin-top: 0;
+    height: 200px;
+  }
+  div.cntWrap .content.cnt01 section article .image {
+    height: 160px;
+  }
+  div.cntWrap .content.cnt02 header h2 {
+    font-size: 16px;
+  }
+  div.cntWrap .content.cnt02 header h3 {
+    display: none;
+  }
+  div.cntWrap .content.cnt02 header .btn {
+    margin-top: 20px;
+  }
+  div.cntWrap .content.cnt02 header .btn button {
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+  }
+  div.cntWrap .content.cnt02 section {
+    height: 240px;
+  }
+  div.cntWrap .content.cnt03 header h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  div.cntWrap .content.cnt03 header h3 {
+    display: none;
+  }
+  div.cntWrap .content.cnt03 section article .image {
+    height: 120px;
+  }
+  div.cntWrap .content.cnt03 section article .texts {
+    margin-top: 20px;
+  }
+  div.cntWrap .content.cnt03 section article .texts h3 {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  div.cntWrap .content.cnt03 section article .texts p {
+    display: none;
+  }
+
+  div.bnrWrap {
+    height: 200px;
+  }
+  div.bnrWrap .bnr01 h2 {
+    font-size: 20px;
+    padding-top: 50px;
+  }
+}/*# sourceMappingURL=mob_index.css.map */

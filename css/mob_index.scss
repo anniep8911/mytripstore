@@ -1,0 +1,193 @@
+$breakpoint-mobile :420px;
+$breakpoint-tablet :780px;
+$mob_titleH2 : 20px;
+
+
+
+@mixin mob {
+    @media(min-width: 0) and (max-width: #{$breakpoint-mobile}){
+        @content;
+    }
+}
+@mixin tab {
+    @media(min-width:#{$breakpoint-mobile} ) and (max-width: #{$breakpoint-tablet}){
+        @content;
+    }
+}
+
+@include tab{
+    div.mnWrap{
+        height: 800px;
+        main{
+            padding: 260px 90px 0;
+        }
+    }
+    div.cnt01{
+        section{
+            flex-wrap: wrap;
+            height: 360px;
+            row-gap: 25px;
+            overflow: hidden;
+            article{
+                width: calc(50% - 20px);
+                margin-top: 30px;
+                .image{
+                
+                }
+            }
+        }
+    }
+    div.cntWrap{
+        .content{
+            &.cnt02{
+                margin-top: 80px;
+                header{
+                    h2{
+                        font-size: $mob_titleH2;
+                        line-height: $mob_titleH2;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+                section{
+                    width: 100%;
+                    height: 480px;
+                }
+            }
+        }
+    }
+    div.cntWrap{
+        .content{
+            &.cnt03{
+                margin-top: 80px;
+                section{
+                    article{
+                        h2{
+                            font-size: $mob_titleH2;
+                            line-height: $mob_titleH2;
+                        }
+                        h3{
+                            font-size: 15px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+                .btn{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    div.bnrWrap{
+        margin-top: 80px;
+        height: 380px;
+        .bnr01{
+            h2{
+                padding-top: 120px;
+            }
+        }
+    }
+}
+
+@include mob(){
+    div.mnWrap{
+        height: 440px;
+        main{
+            padding-top: 180px;
+            header{
+                h2{
+                    font-size: 48px;
+                    line-height: 50px;
+                }
+                h3{
+                    display: none;
+                }
+            }
+        }
+    }
+    div.cntWrap{
+        .content{
+            margin-top: 40px;
+            &.cnt01{
+                header{
+                    margin-top: 40px;
+                    h2{
+                        font-size: 20px; 
+                    }
+                    h3{
+                        display: none;
+                    }
+                }
+                section{
+                    margin-top: 0;
+                    height: 200px;
+                    article{
+                        .image{
+                           height: 160px; 
+                        }
+                    }
+                }
+            }
+            &.cnt02{
+                header{
+                    h2{
+                        font-size: 16px;
+                    }
+                    h3{
+                        display: none;
+                    }
+                    .btn{
+                        margin-top: 20px;
+                        button{
+                            font-size: 14px;
+                            width: 120px;
+                            height: 40px;
+                        }
+                    }
+                }
+                section{
+                    height: 240px;
+                }
+            }
+            &.cnt03{
+                header{
+                    h2{
+                        font-size: $mob_titleH2 ;
+                        line-height: $mob_titleH2 ;
+                    }
+                    h3{
+                        display: none;
+                    }
+                }
+                section{
+                    article{
+                        .image{
+                            height: 120px;
+                        }
+                        .texts{
+                            margin-top: 20px;
+                            h3{
+                                font-size: 12px;
+                                line-height: 20px;
+                                margin-top: 10px;
+                            }
+                            p{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.bnrWrap{
+        height: 200px;
+        .bnr01{
+            h2{
+                font-size: $mob_titleH2;
+                padding-top: 50px;
+            }
+        }
+    }
+}

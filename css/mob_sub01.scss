@@ -1,0 +1,241 @@
+$breakpoint-mobile :420px;
+$breakpoint-tablet :780px;
+$tab_titleH2 : 26px;
+$mob_titleH2 : 20px;
+
+
+
+@mixin mob {
+    @media(min-width: 0) and (max-width: #{$breakpoint-mobile}){
+        @content;
+    }
+}
+@mixin tab {
+    @media(min-width:#{$breakpoint-mobile} ) and (max-width: #{$breakpoint-tablet}){
+        @content;
+    }
+}
+
+@include tab{
+    div.bntW01{
+        height: 800px;
+        .bnr01{
+            header{
+                h2{
+                    padding-top:40px;
+                    font-size: $tab_titleH2;
+                }
+            }
+            section{
+                display: block;
+                div{
+                    width: 100%;
+                    .ch{
+                        display: none;
+                        div{
+                            margin:20px 20px 0;
+                        }
+                    }
+                    .selects{
+                        .place{
+                            margin-top: 40px;
+                        }
+                    }
+                }
+                .sr{
+                    margin-left: 0;
+                }
+            }
+        }
+        .btn{
+            display: none;
+        }  
+    }
+
+    div.cntWrap{
+        .content{
+            margin-top: 80px;
+            &.cnt01{
+                header{
+                    h2{
+                        font-size: $tab_titleH2;
+                    }
+                    p:first-of-type{
+                        display: none;
+                    }
+                    button{
+                        display: none;
+                    }
+                }
+                section{
+                    .image{
+                        height: 440px;
+                    }
+                }
+            }
+            &.cnt02{
+               header{
+                   h2{
+                    font-size: $tab_titleH2;
+                   }
+               }
+               section{
+                   .image{
+                       height: 500px;
+                   }
+               }
+            }
+            &.cnt03{
+                section{
+                    margin-top: 20px;
+                    article{
+                        .image{
+                            height: 320px;
+                        }
+                        .texts{
+                            height: 200px;
+                            ul{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.bnrW02{
+        height: 300px;
+        .bnr02{
+
+            header{
+                padding:20px;
+                h2{
+                    font-size: $tab_titleH2 ;
+                } 
+            }
+        }
+    }
+}
+
+@include mob(){
+    div.mnWrap{
+        height: 800px;
+    }
+        div.bntW01{
+            height: 600px;
+            margin-top: -650px;
+            .bnr01{
+                header{
+                    h2{
+                        padding-top:40px;
+                        font-size: $mob_titleH2;
+                    }
+                }
+                section{
+                    display: block;
+                    div{
+                        width: 100%;
+                        .ch{
+                            display: none;
+                            div{
+                                margin:20px 20px 0;
+                            }
+                        }
+                        .selects{
+                            .place{
+                                margin-top: 40px;
+                            }
+                        }
+                    }
+                    .sr{
+                        margin-left: 0;
+                    }
+                }
+            }
+            .btn{
+                display: none;
+            }  
+        }
+        
+        div.cntWrap{
+            .content{
+                margin-top: 30px;
+                &.cnt01{
+                    margin-top: 90px;
+                    header{
+                        h2{
+                            font-size: $mob_titleH2;
+                        }
+                        p{
+                            display: none;
+                        }
+                        button{
+                            display: none;
+                        }
+                    }
+                    section{
+                        .image{
+                            height: 200px;
+                        }
+                    }
+                }
+                &.cnt02{
+                    header{
+                        h2{
+                            font-size: $mob_titleH2;
+                            line-height: 30px;
+                        }
+                    }
+                    section{
+                        .image{
+                            height: 200px;
+                        }
+                    }
+                }
+                &.cnt03{
+                    header{
+                        h2{
+                            font-size: $mob_titleH2;
+                            line-height: 30px;
+                        }
+                    }
+                    section{
+                        margin-top: 20px;
+                        article{
+                            width: calc(100% / 3);
+                            .image{
+                                height: 320px;
+                            }
+                            .texts{
+                                height: 200px;
+                                h2{
+                                    width: 0;
+                                    font-size: $mob_titleH2;
+                                }
+                                h3{
+                                    font-size: 15px;
+                                }
+                                ul{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div.bnrW02{
+            height: 300px;
+            .bnr02{
+                header{
+                    padding:20px;
+                    h2{
+                        font-size: $mob_titleH2 ;
+                    }
+                    button{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }

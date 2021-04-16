@@ -1,0 +1,174 @@
+@media (min-width: 420px) and (max-width: 780px) {
+  div.bntW01 {
+    height: 800px;
+  }
+  div.bntW01 .bnr01 header h2 {
+    padding-top: 40px;
+    font-size: 26px;
+  }
+  div.bntW01 .bnr01 section {
+    display: block;
+  }
+  div.bntW01 .bnr01 section div {
+    width: 100%;
+  }
+  div.bntW01 .bnr01 section div .ch {
+    display: none;
+  }
+  div.bntW01 .bnr01 section div .ch div {
+    margin: 20px 20px 0;
+  }
+  div.bntW01 .bnr01 section div .selects .place {
+    margin-top: 40px;
+  }
+  div.bntW01 .bnr01 section .sr {
+    margin-left: 0;
+  }
+  div.bntW01 .btn {
+    display: none;
+  }
+
+  div.cntWrap .content {
+    margin-top: 80px;
+  }
+  div.cntWrap .content.cnt01 header h2 {
+    font-size: 26px;
+  }
+  div.cntWrap .content.cnt01 header p:first-of-type {
+    display: none;
+  }
+  div.cntWrap .content.cnt01 header button {
+    display: none;
+  }
+  div.cntWrap .content.cnt01 section .image {
+    height: 440px;
+  }
+  div.cntWrap .content.cnt02 header h2 {
+    font-size: 26px;
+  }
+  div.cntWrap .content.cnt02 section .image {
+    height: 500px;
+  }
+  div.cntWrap .content.cnt03 section {
+    margin-top: 20px;
+  }
+  div.cntWrap .content.cnt03 section article .image {
+    height: 320px;
+  }
+  div.cntWrap .content.cnt03 section article .texts {
+    height: 200px;
+  }
+  div.cntWrap .content.cnt03 section article .texts ul {
+    display: none;
+  }
+
+  div.bnrW02 {
+    height: 300px;
+  }
+  div.bnrW02 .bnr02 header {
+    padding: 20px;
+  }
+  div.bnrW02 .bnr02 header h2 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 0) and (max-width: 420px) {
+  div.mnWrap {
+    height: 800px;
+  }
+
+  div.bntW01 {
+    height: 600px;
+    margin-top: -650px;
+  }
+  div.bntW01 .bnr01 header h2 {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  div.bntW01 .bnr01 section {
+    display: block;
+  }
+  div.bntW01 .bnr01 section div {
+    width: 100%;
+  }
+  div.bntW01 .bnr01 section div .ch {
+    display: none;
+  }
+  div.bntW01 .bnr01 section div .ch div {
+    margin: 20px 20px 0;
+  }
+  div.bntW01 .bnr01 section div .selects .place {
+    margin-top: 40px;
+  }
+  div.bntW01 .bnr01 section .sr {
+    margin-left: 0;
+  }
+  div.bntW01 .btn {
+    display: none;
+  }
+
+  div.cntWrap .content {
+    margin-top: 30px;
+  }
+  div.cntWrap .content.cnt01 {
+    margin-top: 90px;
+  }
+  div.cntWrap .content.cnt01 header h2 {
+    font-size: 20px;
+  }
+  div.cntWrap .content.cnt01 header p {
+    display: none;
+  }
+  div.cntWrap .content.cnt01 header button {
+    display: none;
+  }
+  div.cntWrap .content.cnt01 section .image {
+    height: 200px;
+  }
+  div.cntWrap .content.cnt02 header h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  div.cntWrap .content.cnt02 section .image {
+    height: 200px;
+  }
+  div.cntWrap .content.cnt03 header h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  div.cntWrap .content.cnt03 section {
+    margin-top: 20px;
+  }
+  div.cntWrap .content.cnt03 section article {
+    width: calc(100% / 3);
+  }
+  div.cntWrap .content.cnt03 section article .image {
+    height: 320px;
+  }
+  div.cntWrap .content.cnt03 section article .texts {
+    height: 200px;
+  }
+  div.cntWrap .content.cnt03 section article .texts h2 {
+    width: 0;
+    font-size: 20px;
+  }
+  div.cntWrap .content.cnt03 section article .texts h3 {
+    font-size: 15px;
+  }
+  div.cntWrap .content.cnt03 section article .texts ul {
+    display: none;
+  }
+
+  div.bnrW02 {
+    height: 300px;
+  }
+  div.bnrW02 .bnr02 header {
+    padding: 20px;
+  }
+  div.bnrW02 .bnr02 header h2 {
+    font-size: 20px;
+  }
+  div.bnrW02 .bnr02 header button {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=mob_sub01.css.map */

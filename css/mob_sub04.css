@@ -1,0 +1,185 @@
+@media (min-width: 420px) and (max-width: 780px) {
+  div.mnWrap {
+    height: 400px;
+  }
+  div.mnWrap main {
+    padding: 160px 90px 0;
+  }
+  div.mnWrap main header h2 {
+    line-height: 40px;
+    font-size: 26px;
+  }
+  div.mnWrap main header h4 {
+    display: none;
+  }
+  div.mnWrap main header p {
+    display: none;
+  }
+
+  div.cntWrap .cnt01 {
+    margin-top: 80px;
+  }
+  div.cntWrap .cnt01 header p {
+    display: none;
+  }
+  div.cntWrap .cnt01 header .btn {
+    display: flex;
+  }
+  div.cntWrap .cnt01 header .btn button {
+    margin: 0 10px;
+  }
+  div.cntWrap .cnt01 section article {
+    margin-top: 80px;
+  }
+  div.cntWrap .cnt01 section article .image {
+    height: 400px;
+  }
+  div.cntWrap .cnt01 section article .texts p {
+    display: none;
+  }
+  div.cntWrap .cnt01 section article .texts h3 {
+    font-size: 14px;
+  }
+  div.cntWrap .cnt01 section article .artBtm {
+    height: 300px;
+  }
+  div.cntWrap .cnt02 {
+    margin-top: 80px;
+  }
+  div.cntWrap .cnt02 header {
+    width: 30%;
+    padding: 20px;
+  }
+  div.cntWrap .cnt02 header p {
+    display: none;
+  }
+  div.cntWrap .cnt02 header .btn {
+    display: none;
+  }
+  div.cntWrap .cnt02 article .texts h3 {
+    display: none;
+  }
+  div.cntWrap .cnt02 article .texts p {
+    display: none;
+  }
+  div.cntWrap .cnt03 {
+    margin-top: 80px;
+  }
+  div.cntWrap .cnt03 .artBtm article p {
+    display: none;
+  }
+  div.cntWrap .cnt03 .artBtm article .btn {
+    display: none;
+  }
+}
+div.bnrWrap {
+  margin-top: 80px;
+  height: 300px;
+  position: relative;
+}
+div.bnrWrap .bnr01 {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+}
+div.bnrWrap .bnr01 h2 {
+  padding-top: 0;
+}
+
+@media (min-width: 0) and (max-width: 420px) {
+  div.mnWrap {
+    height: 350px;
+  }
+  div.mnWrap main {
+    height: 350px;
+  }
+  div.mnWrap main .header {
+    width: 100%;
+  }
+  div.mnWrap main .header h2 {
+    width: 100%;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  div.mnWrap main .header h4 {
+    display: none;
+  }
+  div.mnWrap main .header p {
+    display: none;
+  }
+
+  div.cntWrap .cnt01 {
+    display: block;
+    padding: 0 10px;
+  }
+  div.cntWrap .cnt01 header {
+    width: 100%;
+    text-align: center;
+  }
+  div.cntWrap .cnt01 header h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  div.cntWrap .cnt01 header h4 {
+    margin-top: 20px;
+  }
+  div.cntWrap .cnt01 header .btn {
+    margin-top: 20px;
+    text-align: center;
+  }
+  div.cntWrap .cnt01 header .btn button {
+    margin: 0 auto;
+  }
+  div.cntWrap .cnt01 header .btn button:last-of-type {
+    display: none;
+  }
+  div.cntWrap .cnt01 section {
+    width: 100%;
+  }
+  div.cntWrap .cnt01 section article {
+    margin-top: 20px;
+  }
+  div.cntWrap .cnt02 {
+    display: block;
+  }
+  div.cntWrap .cnt02 header {
+    width: 100%;
+  }
+  div.cntWrap .cnt02 article {
+    width: 100%;
+    margin-top: 20px;
+  }
+  div.cntWrap .cnt02 article .image {
+    margin-top: 20px;
+  }
+  div.cntWrap .cnt02 article .texts {
+    display: flex;
+  }
+  div.cntWrap .cnt02 article .texts h2 {
+    line-height: 40px;
+  }
+  div.cntWrap .cnt02 article .texts h3 {
+    display: block;
+    margin-left: 20px;
+    text-transform: uppercase;
+  }
+  div.cntWrap div.cnt03 {
+    margin-top: 80px;
+  }
+  div.cntWrap div.cnt03 section .artTop {
+    flex-wrap: wrap;
+  }
+  div.cntWrap div.cnt03 section .artTop article {
+    height: 180px;
+  }
+  div.cntWrap div.cnt03 section .artBtm {
+    display: none;
+  }
+  div.cntWrap div.bnrWrap {
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=mob_sub04.css.map */
