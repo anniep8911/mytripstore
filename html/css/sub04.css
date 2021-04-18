@@ -1,0 +1,193 @@
+
+div.mnWrap{
+    background-image: url(../image/sub04_main.jpg);
+}
+main .header{
+    color: #fff;
+    width: calc(100% / 12 * 7);
+}
+main .header h2{
+    font-size: 36px;
+    text-transform: capitalize;
+}
+main .header h2::before{
+    border-color: #fff;
+    width: 10%;
+}
+main .header h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+main .header h4::before{
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 10px;
+    background-color: #fff;
+    width: 80%;
+    float: left;
+    margin-right: 20px;
+}
+main .header p{
+    margin-top: 80px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+div.cnt01{
+    padding: 0 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+div.cnt01 header{
+    width: calc(50% - 20px);
+}
+div.cnt01 header h2{}
+div.cnt01 header p{
+    margin-top: 40px;
+}
+div.cnt01 header p:nth-last-of-type(1){
+    margin-top: 20px;
+}
+div.cnt01 header h4{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+div.cntWrap .cnt01 header h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+}
+div.cnt01 header .btn{
+    margin-top: 40px;
+}
+div.cnt01 header .btn button{}
+div.cnt01 section{
+    width: calc(50% - 20px);
+}
+div.cnt01 section article .image{
+    height: 640px;
+    background-image: url(../image/sub04_cnt01.jpg);
+}
+
+div.cnt02{
+    display: flex;
+    align-items: flex-end;
+}
+div.cnt02 header{
+    width: calc(100% / 4 - 20px);
+}
+div.cnt02 header h2::before{
+    width: 40%;
+}
+div.cnt02 header .btn{
+    text-align: right;
+}
+div.cnt02 header .btn button{
+    margin-top: 40px;
+    background-color: transparent;
+    color: #ccc;
+    width: 20px;
+    height: 10px;
+}
+
+div.cnt02{
+    display: flex;
+    justify-content: space-around;
+}
+div.cnt02 article{
+    width: calc(100% / 4 - 20px);
+}
+div.cnt02 article .texts h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+div.cnt02 article .texts h3{
+    font-size: 26px;
+    font-weight: bold;
+    color: #555;
+    line-height: 40px;
+}
+div.cnt02 article .texts p{
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+div.cnt02 article .image{
+    height: 160px;
+    background-color: #ccc;
+    margin-top: 40px;
+}
+div.cnt02 article .image.i1{background-image: url(../image/sub04_cnt02_i1.jpg);}
+div.cnt02 article .image.i2{background-image: url(../image/sub04_cnt02_i2.jpg);}
+div.cnt02 article .image.i3{background-image: url(../image/sub04_cnt02_i3.jpg);}
+
+div.cnt03 section{}
+div.cnt03 section .artTop{
+    display: flex;
+    justify-content: space-around;
+}
+div.cnt03 section .artTop article{}
+div.cnt03 section .artTop article .image{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #ccc;
+    outline: 10px solid white; 
+}
+div.cnt03 section .artTop article .image.i1{background-image: url(../image/sub04_cnt03_i1.jpg);}
+div.cnt03 section .artTop article .image.i2{background-image: url(../image/sub04_cnt03_i2.jpg);}
+div.cnt03 section .artTop article .image.i3{background-image: url(../image/sub04_cnt03_i3.jpg);}
+div.cnt03 section .artTop article .image.i4{background-image: url(../image/sub04_cnt03_i4.jpg);}
+div.cnt03 section .artBtm{
+    text-align: center;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 300px);
+    padding-top: 80px;
+    margin: -80px auto 0;
+    border-top: 1px solid black;
+}
+div.cnt03 section .artBtm article{
+    width:calc(100% / 3 - 30px);
+}
+div.cnt03 section .artBtm article h2{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+div.cnt03 section .artBtm article p{
+    height: 120px;
+    overflow: hidden;
+    line-height: 20px;
+}
+div.cnt03 section .artBtm article .btn{
+    height: 40px;
+}
+div.cnt03 section .artBtm article .btn p{
+    line-height: 40px;
+    cursor: pointer;
+}
+
+div.bnrWrap{
+    height: 480px;
+    background-image: url(../image/sub04_bnr.jpg);
+    text-align: center;
+    color: #fff;
+}
+div.bnrWrap .bnr01 h2{
+    padding-top: 180px;
+    line-height: 80px;
+}
+div.bnrWrap .bnr01 button{
+    margin-top: 20px;
+    border: 5px solid rgba(255,255,255,0.7);
+}

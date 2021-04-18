@@ -15,7 +15,6 @@
   div.mnWrap main header p {
     display: none;
   }
-
   div.cntWrap .cnt01 {
     margin-top: 80px;
   }
@@ -54,7 +53,6 @@
   div.cntWrap .cnt02 section article .image {
     height: 300px;
   }
-
   div.bnrWrap {
     margin-top: 80px;
     height: 300px;
@@ -89,12 +87,16 @@
     height: 500px;
   }
 }
+
 @media (min-width: 0) and (max-width: 420px) {
   div.mnWrap {
     height: 400px;
   }
   div.mnWrap main {
-    padding: 160px 90px 0;
+    padding: 160px 50px 0;
+  }
+  div.mnWrap main header {
+    width: 100%;
   }
   div.mnWrap main header h2 {
     line-height: 40px;
@@ -106,7 +108,6 @@
   div.mnWrap main header p {
     display: none;
   }
-
   div.cntWrap .cnt01 {
     margin-top: 80px;
   }
@@ -118,18 +119,29 @@
     display: none;
   }
   div.cntWrap .cnt01 section article {
-    margin-top: 80px;
+    margin-top: 40px;
+  }
+  div.cntWrap .cnt01 section article .artTop {
+    display: block;
+  }
+  div.cntWrap .cnt01 section article .artTop .image {
+    direction: ltr;
+    height: 200px;
+    width: 100%;
   }
   div.cntWrap .cnt01 section article .artTop .image .overGrid {
     height: 300px;
     width: 100%;
   }
   div.cntWrap .cnt01 section article .artTop .texts {
-    margin-right: -100px;
-    width: 50%;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    padding: 20px;
   }
   div.cntWrap .cnt01 section article .artTop .texts h2 {
     font-size: 20px;
+    line-height: 40px;
   }
   div.cntWrap .cnt01 section article .artTop .texts p {
     display: none;
@@ -140,13 +152,16 @@
   div.cntWrap .cnt01 section article .artBtm {
     display: none;
   }
+  div.cntWrap .cnt01 section article:nth-last-of-type(2) .artTop .image {
+    width: 100%;
+  }
   div.cntWrap .cnt01 section article:nth-last-of-type(2) .artTop .image .overGrid {
     height: 300px;
     width: 100%;
   }
   div.cntWrap .cnt01 section article:nth-last-of-type(2) .artTop .texts {
     margin-right: -100px;
-    width: 66%;
+    width: 100%;
   }
   div.cntWrap .cnt01 section article:nth-last-of-type(2) .artTop .texts h2 {
     font-size: 20px;
@@ -163,24 +178,32 @@
   div.cntWrap .cnt02 header {
     width: 100%;
   }
+  div.cntWrap .cnt02 header h2 {
+    font-size: 20px;
+  }
   div.cntWrap .cnt02 section {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
+    display: block;
   }
   div.cntWrap .cnt02 section .logo {
     display: none;
   }
+  div.cntWrap .cnt02 section article {
+    width: 100%;
+  }
   div.cntWrap .cnt02 section article .image {
-    height: 300px;
+    width: 100%;
+    height: 200px;
   }
   div.cntWrap .cnt02 section article .texts {
     display: none;
   }
-
   div.bnrWrap {
-    margin-top: 80px;
-    height: 300px;
+    margin-top: 40px;
+    height: 200px;
     position: relative;
+    padding: 30px;
   }
   div.bnrWrap .bnr01 {
     position: absolute;
@@ -189,12 +212,11 @@
     left: 0;
     bottom: 0;
     right: 0;
-    height: 150px;
+    height: 100px;
   }
   div.bnrWrap .bnr01 header {
-    height: 0;
     margin: auto;
-    height: 200px;
+    height: 100px;
     top: -20px;
     bottom: 0;
     left: 20%;
@@ -202,6 +224,7 @@
   }
   div.bnrWrap .bnr01 header h2 {
     padding-top: 0px;
+    font-size: 20px;
   }
   div.bnrWrap .bnr01 header p {
     display: none;
@@ -210,4 +233,5 @@
     width: 100%;
     height: 500px;
   }
-}/*# sourceMappingURL=mob_sub03.css.map */
+}
+/*# sourceMappingURL=mob_sub03.css.map */

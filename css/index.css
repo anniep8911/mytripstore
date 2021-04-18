@@ -69,7 +69,7 @@ div.cnt02{
 }
 div.cnt02 header{
     position: absolute;
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     left: calc(100% / 12);
     top:50%;
     transform: translate(0,-50%);

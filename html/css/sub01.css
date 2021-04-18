@@ -1,0 +1,281 @@
+div.mnWrap{
+    background-image: url(../image/sub01_main.jpg);
+}
+
+div.bntW01{
+    width: 110%;
+    background-color: rgba(0,0,0,0.4);
+    height: 960px;
+    width: 70%;
+    margin: -840px auto 0;
+}
+div.bnr01{
+}
+div.bnr01 header{
+    color: #fff;
+}
+div.bntW01 .bnr01 header h2{
+    text-align: left;
+    font-size: 36px;
+    padding-top: 120px; 
+    
+}
+div.bnr01 header .topL::before{
+    border-color: #fff;
+    width: 5%;
+}
+div.bnr01 section{
+    display: flex;
+    justify-content: space-around;
+}
+div.bnr01 section .sl{
+    color: #fff;
+    width: calc(100% / 12 * 5);
+}
+div.bnr01 section .sr{
+    color: #fff;
+    width: calc(100% / 12 * 7);
+    margin-left: 20px;
+    
+}
+div.bnr01 section div .ch{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.bnr01 section div .ch h3{
+    width: 100%;
+    margin-top: 40px;
+    font-size: 26px;
+}
+div.bnr01 section div .ch input{
+    display: none;
+}
+div.bnr01 section div .ch div{
+    width: 36px;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+div.bnr01 section .sr .ch div{
+    width: 80px;
+    text-align: center;
+}
+div.bnr01 section div .ch div label i:first-of-type{
+    display: none;
+    font-size: 36px;
+}
+div.bnr01 section div .ch div label i:last-of-type{
+    font-size: 36px;
+}
+
+div.bnr01 section div .selects div{
+    outline: 1px solid white;
+    margin-top: 80px;
+}
+div.bnr01 section div .selects div:last-of-type{
+    margin-top: 40px;
+}
+div.bnr01 section div .selects div i{
+    font-size: 26px;
+    line-height: 60px;
+    width: 15%;
+    text-align: center;
+}
+div.bnr01 section div .selects div select{
+    width: 80%;
+    border:0; 
+    background-color: transparent;
+    color: #fff;
+    height: 60px;
+    font-size: 18px;
+}
+div.bnr01 section div .selects div select option{
+    color: #000;
+}
+div.bntW01 .btn{
+    text-align: center;
+}
+div.bntW01 .btn button{
+    margin-top: 100px;
+    background-color: #fff;
+    color: #000;
+}
+div.bntW01 .btn p{
+    font-size: 40px;
+    margin-top: 80px;
+    color: #fff;
+}
+div.bntW01 .btn p i{
+    cursor: pointer;
+}
+
+/*체크박스 액션*/
+#m:checked~.male>label>i:first-of-type{
+    display: block;
+}
+#m:checked~.male>label>i:last-of-type{
+    display: none;
+}
+#f:checked~.female>label>i:first-of-type{
+    display: block;
+}
+#f:checked~.female>label>i:last-of-type{
+    display: none;
+}
+#fir:checked~.first>label>i:first-of-type{
+    display: block;
+}
+#fir:checked~.first>label>i:last-of-type{
+    display: none;
+}
+#sec:checked~.second>label>i:first-of-type{
+    display: block;
+}
+#sec:checked~.second>label>i:last-of-type{
+    display: none;
+}
+#thir:checked~.third>label>i:first-of-type{
+    display: block;
+}
+#thir:checked~.third>label>i:last-of-type{
+    display: none;
+}
+#four:checked~.fourth>label>i:first-of-type{
+    display: block;
+}
+#four:checked~.fourth>label>i:last-of-type{
+    display: none;
+}
+
+
+
+/*컨텐츠1*/
+div.cnt01{
+    display: flex;
+    justify-content: space-around;
+}
+div.cnt01 header{
+    width: calc(100% / 12 * 4);
+    margin-top: 60px;
+}
+div.cnt01 header h2{}
+div.cnt01 header p{
+    margin-top: 20px;
+}
+div.cnt01 header button{
+    margin-top: 80px;
+}
+div.cnt01 section{
+    width: calc(100% / 12 * 7);
+}
+div.cnt01 section .image{
+    width: 100%;
+    height: 760px;
+    background-image: url(../image/sub01_cnt01.jpg);
+}
+div.cntWrap .content.cnt02{
+    text-align: center;
+    max-width: none;
+    width: 100vw;
+}
+div.cnt02 header{
+    width: calc(100% / 12 * 6);
+    margin: 0 auto;
+}
+div.cntWrap .cnt02 header h2{
+    line-height: 80px;
+}
+div.cnt02 header p{
+    height: 40px; overflow: hidden;
+}
+div.cnt02 section{
+    width: 100%;
+    margin-left: -20%;
+    margin: 40px auto 0;
+    
+}
+div.cnt02 section .image{
+    height: 1040px;
+    background-size: contain;
+    background-image: url(../image/sub01_cnt02.png);
+}
+
+div.cnt03{}
+div.cnt03 header{
+    width: calc(100% / 12 * 5);
+}
+div.cnt03 header h2{}
+div.cnt03 header p{
+    font-size: 18px;
+    line-height: 40px;
+    color: #666;
+}
+div.cnt03 section{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+div.cnt03 section article{
+    width: calc(100% / 3 - 20px);
+}
+div.cnt03 section article .image{
+    width: 100%;
+    height: 600px;
+    background-color: #fc0;
+}
+div.cnt03 section article .image.i1{background-image: url(../image/sub01_cnt03_i1.jpg);}
+div.cnt03 section article .image.i2{background-image: url(../image/sub01_cnt03_i2.jpg);}
+div.cnt03 section article .image.i3{background-image: url(../image/sub01_cnt03_i3.jpg);}
+div.cnt03 section article .texts{
+    width: 95%;
+    height: 320px;
+    margin-top: -320px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 40px 20px;
+    color: #fff;
+}
+div.cnt03 section article .texts h2{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 180px;
+}
+div.cnt03 section article .texts h2:before{
+    background-color: #fff;
+    height: 2px;
+}
+div.cnt03 section article .texts h3{
+    font-size: 28px;
+    text-transform: capitalize;
+}
+div.cnt03 section article .texts ul{
+    list-style: disc;
+    margin-top: 40px;
+}
+div.cnt03 section article .texts ul li{
+    margin-left: 20px;
+}
+
+div.bnrW02{
+    height: 480px;
+    background-image: url(../image/sub01_bnr02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 480px;
+}
+div.bnrW02 header{
+    padding: 80px 0px 120px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+div.bnrW02 header h2{
+    margin-top: 40px;
+}
+div.bnr02 header button{
+    margin-top: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    margin: 40px 30px 0;
+}

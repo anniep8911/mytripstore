@@ -15,7 +15,6 @@
   div.mnWrap main header p {
     display: none;
   }
-
   div.cntWrap .cnt01 {
     margin-top: 80px;
   }
@@ -23,6 +22,8 @@
     display: none;
   }
   div.cntWrap .cnt01 header .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   div.cntWrap .cnt01 header .btn button {
@@ -72,11 +73,13 @@
     display: none;
   }
 }
+
 div.bnrWrap {
   margin-top: 80px;
   height: 300px;
   position: relative;
 }
+
 div.bnrWrap .bnr01 {
   position: absolute;
   margin: auto;
@@ -86,6 +89,7 @@ div.bnrWrap .bnr01 {
   right: 0;
   height: 150px;
 }
+
 div.bnrWrap .bnr01 h2 {
   padding-top: 0;
 }
@@ -96,14 +100,15 @@ div.bnrWrap .bnr01 h2 {
   }
   div.mnWrap main {
     height: 350px;
+    padding: 190px 30px 0;
   }
   div.mnWrap main .header {
     width: 100%;
   }
   div.mnWrap main .header h2 {
     width: 100%;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 30px;
+    font-size: 18px;
   }
   div.mnWrap main .header h4 {
     display: none;
@@ -111,10 +116,10 @@ div.bnrWrap .bnr01 h2 {
   div.mnWrap main .header p {
     display: none;
   }
-
   div.cntWrap .cnt01 {
     display: block;
     padding: 0 10px;
+    margin-top: 40px;
   }
   div.cntWrap .cnt01 header {
     width: 100%;
@@ -126,6 +131,14 @@ div.bnrWrap .bnr01 h2 {
   }
   div.cntWrap .cnt01 header h4 {
     margin-top: 20px;
+  }
+  div.cntWrap .cnt01 header p {
+    height: 80px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  div.cntWrap .cnt01 header p:last-of-type {
+    display: none;
   }
   div.cntWrap .cnt01 header .btn {
     margin-top: 20px;
@@ -143,11 +156,26 @@ div.bnrWrap .bnr01 h2 {
   div.cntWrap .cnt01 section article {
     margin-top: 20px;
   }
+  div.cntWrap .cnt01 section article .image {
+    height: 300px;
+  }
   div.cntWrap .cnt02 {
     display: block;
+    margin-top: 40px;
   }
   div.cntWrap .cnt02 header {
     width: 100%;
+  }
+  div.cntWrap .cnt02 header h2 {
+    font-size: 20px;
+    line-height: 30px;
+    width: 20%;
+  }
+  div.cntWrap .cnt02 header .btn {
+    display: none;
+  }
+  div.cntWrap .cnt02 header p {
+    display: none;
   }
   div.cntWrap .cnt02 article {
     width: 100%;
@@ -157,29 +185,59 @@ div.bnrWrap .bnr01 h2 {
     margin-top: 20px;
   }
   div.cntWrap .cnt02 article .texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   div.cntWrap .cnt02 article .texts h2 {
-    line-height: 40px;
+    line-height: 30px;
+    font-size: 18px;
   }
   div.cntWrap .cnt02 article .texts h3 {
     display: block;
+    line-height: 30px;
     margin-left: 20px;
+    font-size: 18px;
     text-transform: uppercase;
+  }
+  div.cntWrap .cnt02 article .texts p {
+    display: none;
   }
   div.cntWrap div.cnt03 {
     margin-top: 80px;
   }
   div.cntWrap div.cnt03 section .artTop {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   div.cntWrap div.cnt03 section .artTop article {
-    height: 180px;
+    height: 150px;
+  }
+  div.cntWrap div.cnt03 section .artTop article .image {
+    width: 130px;
+    height: 130px;
   }
   div.cntWrap div.cnt03 section .artBtm {
     display: none;
   }
-  div.cntWrap div.bnrWrap {
+  div.bnrWrap {
     margin-top: 40px;
+    height: 200px;
+    position: relative;
   }
-}/*# sourceMappingURL=mob_sub04.css.map */
+  div.bnrWrap .bnr01 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 120px;
+  }
+  div.bnrWrap .bnr01 h2 {
+    padding-top: 0;
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=mob_sub04.css.map */

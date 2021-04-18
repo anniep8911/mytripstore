@@ -10,7 +10,7 @@ div.mnWrap main header h2{
     height: 120px;
 }
 div.mnWrap main header h2::before{
-    background-color: #fff;
+    border-color: #fff;
     height: 2px;
     margin-bottom: 10px;
     width: 10%;

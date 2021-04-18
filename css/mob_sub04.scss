@@ -134,12 +134,13 @@ $tab_titleH2 : 26px;
         height: 350px;
         main{
             height: 350px;
+            padding: 190px 30px 0;
             .header{
                 width: 100%;
                 h2{
                     width: 100%;
-                    line-height: 40px;
-                    font-size: $mob_titleH2;
+                    line-height: 30px;
+                    font-size: 18px;
                 }
                 h4{
                     display: none;
@@ -154,7 +155,7 @@ $tab_titleH2 : 26px;
         .cnt01{
             display: block;
             padding: 0 10px;
-
+            margin-top: 40px;
             header{
                 width: 100%;
                 text-align: center;
@@ -164,6 +165,14 @@ $tab_titleH2 : 26px;
                 }
                 h4{
                     margin-top: 20px;
+                }
+                p{
+                    height: 80px;
+                    overflow: hidden;
+                    margin-top: 20px;
+                }
+                p:last-of-type{
+                    display: none;
                 }
                 .btn{
                     margin-top: 20px;
@@ -180,14 +189,29 @@ $tab_titleH2 : 26px;
                 width: 100%;
                 article{
                     margin-top: 20px;
+                    .image{
+                        height: 300px;
+                    }
                 }
             }
         }
 
         .cnt02{
             display: block;
+            margin-top: 40px;
             header{
                 width: 100%;
+                h2{
+                    font-size: $mob_titleH2;
+                    line-height: 30px;
+                    width: 20%;
+                }
+                .btn{
+                   display: none;
+                }
+                p{
+                    display: none;
+                }
             }
             article{
                 width: 100%;
@@ -198,12 +222,18 @@ $tab_titleH2 : 26px;
                 .texts{
                     display: flex;
                     h2{
-                        line-height: 40px;
+                        line-height: 30px;
+                        font-size: 18px;
                     }
                     h3{
                         display: block;
+                        line-height: 30px;
                         margin-left: 20px;
+                        font-size: 18px;
                         text-transform: uppercase;
+                    }
+                    p{
+                        display: none;
                     }
                 }
             }
@@ -215,7 +245,11 @@ $tab_titleH2 : 26px;
                 .artTop{
                     flex-wrap: wrap;
                     article{
-                        height: 180px;
+                        height: 150px;
+                        .image{
+                            width: 130px;
+                            height: 130px;
+                        }
                     }
                 }
                 .artBtm{
@@ -224,10 +258,24 @@ $tab_titleH2 : 26px;
                 
             }
         }
-        
-        div.bnrWrap{
-            margin-top: 40px;
+    }
+
+    div.bnrWrap{
+        margin-top: 40px;
+        height: 200px;
+        position: relative;
+        .bnr01{
+            position: absolute;
+            margin: auto;
+            top: 0;left: 0;bottom: 0;right: 0;
+            height: 120px;
+           h2{
+               padding-top: 0;
+               line-height: 40px;
+               font-size: $mob_titleH2;
+           }
         }
     }
+
     }
     

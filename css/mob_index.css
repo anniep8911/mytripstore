@@ -5,9 +5,9 @@
   div.mnWrap main {
     padding: 260px 90px 0;
   }
-
   div.cnt01 section {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 360px;
     row-gap: 25px;
     overflow: hidden;
@@ -16,21 +16,22 @@
     width: calc(50% - 20px);
     margin-top: 30px;
   }
+  div.cntWrap .content {
+    margin-top: 100px;
+  }
   div.cntWrap .content.cnt02 {
     margin-top: 80px;
   }
   div.cntWrap .content.cnt02 header h2 {
     font-size: 20px;
-    line-height: 20px;
   }
-  div.cntWrap .content.cnt02 header p {
-    display: none;
+  div.cntWrap .content.cnt02 header .btn {
+    margin-top: 20px;
   }
   div.cntWrap .content.cnt02 section {
     width: 100%;
     height: 480px;
   }
-
   div.cntWrap .content.cnt03 {
     margin-top: 80px;
   }
@@ -45,7 +46,6 @@
   div.cntWrap .content.cnt03 .btn {
     margin-top: 40px;
   }
-
   div.bnrWrap {
     margin-top: 80px;
     height: 380px;
@@ -54,6 +54,7 @@
     padding-top: 120px;
   }
 }
+
 @media (min-width: 0) and (max-width: 420px) {
   div.mnWrap {
     height: 440px;
@@ -68,7 +69,6 @@
   div.mnWrap main header h3 {
     display: none;
   }
-
   div.cntWrap .content {
     margin-top: 40px;
   }
@@ -90,9 +90,14 @@
   }
   div.cntWrap .content.cnt02 header h2 {
     font-size: 16px;
+    line-height: 20px;
   }
   div.cntWrap .content.cnt02 header h3 {
     display: none;
+  }
+  div.cntWrap .content.cnt02 header p {
+    height: 40px;
+    overflow: hidden;
   }
   div.cntWrap .content.cnt02 header .btn {
     margin-top: 20px;
@@ -126,12 +131,13 @@
   div.cntWrap .content.cnt03 section article .texts p {
     display: none;
   }
-
   div.bnrWrap {
     height: 200px;
+    margin-top: 60px;
   }
   div.bnrWrap .bnr01 h2 {
     font-size: 20px;
     padding-top: 50px;
   }
-}/*# sourceMappingURL=mob_index.css.map */
+}
+/*# sourceMappingURL=mob_index.css.map */

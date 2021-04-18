@@ -39,15 +39,15 @@ $mob_titleH2 : 20px;
     }
     div.cntWrap{
         .content{
+            margin-top: 100px;
             &.cnt02{
                 margin-top: 80px;
                 header{
                     h2{
                         font-size: $mob_titleH2;
-                        line-height: $mob_titleH2;
                     }
-                    p{
-                        display: none;
+                    .btn{
+                        margin-top: 20px;
                     }
                 }
                 section{
@@ -133,9 +133,14 @@ $mob_titleH2 : 20px;
                 header{
                     h2{
                         font-size: 16px;
+                        line-height: 20px;
                     }
                     h3{
                         display: none;
+                    }
+                    p{
+                        height: 40px;
+                        overflow: hidden;
                     }
                     .btn{
                         margin-top: 20px;
@@ -183,6 +188,7 @@ $mob_titleH2 : 20px;
     }
     div.bnrWrap{
         height: 200px;
+        margin-top: 60px;
         .bnr01{
             h2{
                 font-size: $mob_titleH2;

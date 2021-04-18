@@ -1,0 +1,405 @@
+@import url('all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Serif+KR:wght@300;500;700&family=Kaushan+Script&family=Cormorant+Unicase:wght@500&family=Inconsolata:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 100;
+    src: url(../fonts/NotoSansKR-Thin.otf);
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    src: url(../fonts/NotoSansKR-Light.otf);
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    src: url(../fonts/NotoSansKR-Medium.otf);
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    src: url(../fonts/NotoSansKR-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    src: url(../fonts/NotoSansKR-Black.otf);
+}
+
+@font-face {
+    font-family: 'Noto Serif KR';
+    font-weight: 300;
+    src: url(../fonts/NotoSerifKR-Light.otf);
+}
+
+@font-face {
+    font-family: 'Noto Serif KR';
+    font-weight: 500;
+    src: url(../fonts/NotoSerifKR-Medium.otf);
+}
+
+@font-face {
+    font-family: 'Noto Serif KR';
+    font-weight: 700;
+    src: url(../fonts/NotoSerifKR-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    font-weight: 700;
+    src: url(../fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    font-weight: 700;
+    src: url(../fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cormorant Unicase';
+    font-weight: 500;
+    src: url(../fonts/CormorantUnicase-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    font-weight: 500;
+    src: url(../fonts/Inconsolata-VariableFont_wdth,wght.ttf);
+}
+
+body {
+    font-family: "Noto Sans KR";
+    font-weight: 300;
+}
+
+*.topR::before {
+    display: block;
+    content: '';
+    width: calc(100% / 12 * 2);
+    height: 20px;
+    border-top: 5px solid black;
+    margin-left: auto;
+}
+
+*.topL::before {
+    display: block;
+    content: '';
+    width: calc(100% / 12 * 2);
+    height: 20px;
+    border-top: 5px solid black;
+    margin-right: auto;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*글로벌 헤더*/
+div.hdrWrap {
+    color: #fff;
+
+}
+
+div.hdrWrap header {
+    width: 100%;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.hdrWrap header h1 {
+    width: 30%;
+    max-width: 220px;
+    height: 40px;
+    background-image: url('../image/logo_name.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.hdrWrap header h1 a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+div.hdrWrap header ul {
+    width: 70%;
+    max-width: 850px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.hdrWrap header ul li {
+    font-size: 18px;
+    font-family: "Noto sans KR";
+    text-transform: capitalize;
+}
+
+div.hdrWrap header ul .bars {
+    display: none;
+}
+
+div.hdrWrap header ul .sideSlide {
+    display: none;
+}
+
+@media(max-width:950px) {
+    div.hdrWrap header ul li{
+        display: none;
+        width: 100%;
+        text-align: right;
+
+    }
+    div.hdrWrap header ul .bars {
+        display: block;
+        font-size: 30px;
+        transition: color 0.2s;
+    }
+    div.hdrWrap header ul .sideSlide {
+        display: block;
+        width: 0vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 20;
+        background-color: rgba(0,0,0,0.5);
+        transition: width 0.5s;
+    }
+    div.hdrWrap header ul .sideSlide .ham{
+        font-size: 40px;
+        text-align: right;
+        margin: 30px 80px 0;
+    }
+    div.hdrWrap header ul .sideSlide ol{
+        margin-top: 200px;
+    }
+    div.hdrWrap header ul .sideSlide ol li{
+        display: block;
+        font-size: 28px;
+        line-height: 60px;
+        text-align: center;
+    }
+}
+
+/*글로벌 메인*/
+div.mnWrap {
+    width: 100vw;
+    height: 1080px;
+    background-image: url(../image/header01.jpg);
+    margin-top: -130px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.mnWrap main {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 440px 90px 0;
+
+}
+
+div.mnWrap main header {
+    color: #fff;
+    position: relative;
+}
+
+div.mnWrap main header h2 {
+    font-size: 98px;
+    line-height: 100px;
+    font-family: "Cormorant Unicase";
+    text-transform: capitalize;
+}
+
+div.mnWrap main header h3 {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 80px;
+}
+
+div.mnWrap main header h3:last-of-type {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+/*글로벌 컨텐츠*/
+div.cntWrap {}
+
+div.cntWrap .content {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+div.cntWrap .content header {}
+
+div.cntWrap .content header h2 {
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: capitalize;
+    font-family: 'Inconsolata';
+    font-weight: bold;
+}
+
+div.cntWrap .content header h3 {
+    font-size: 18px;
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    color: #666;
+}
+
+div.cntWrap .content header p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*글로벌 배너*/
+div.bnrWrap {
+    margin-top: 160px;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.bnrWrap .banner {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+div.bnrWrap .banner h2 {
+    font-size: 48px;
+    text-align: center;
+    font-family: "Cormorant Unicase";
+    text-transform: capitalize;
+}
+
+div.bnrWrap .banner button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0;
+}
+
+/*글로벌 푸터*/
+div.ftrWrap {
+    background-color: #033;
+    color: #fff;
+}
+
+div.ftrWrap footer {
+    width: 100%;
+    padding: 80px 10% 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.ftrWrap footer div {
+    width: 20%;
+    height: 320px;
+}
+
+div.ftrWrap footer div:first-of-type {
+    width: 60%;
+}
+
+div.ftrWrap footer div dl dt {
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 80px;
+}
+
+div.ftrWrap footer div dl dd {
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+div.ftrWrap footer div dl dd:first-of-type {
+    margin-top: 40px;
+}
+
+div.ftrWrap footer .fl h1 {
+    height: 40px;
+    margin: 20px 0;
+    width: 30%;
+    background-image: url(../image/logo_wh_01-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+div.ftrWrap footer .fl p {
+    margin-top: 180px;
+}
+
+div.ftrWrap footer .fr dl dd {
+    text-transform: lowercase;
+}
+
+@media (min-width: 420px) and (max-width: 780px){
+    div.ftrWrap footer {
+        width: 100%;
+        padding: 30px 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    div.ftrWrap footer .fl p {
+        display: none;
+    }
+    div.ftrWrap footer .fm{
+        width: 50%;
+    }
+    
+    
+    div.ftrWrap footer .fr{
+        display: none;
+        
+    } 
+    
+}
+@media (min-width: 0) and (max-width: 420px){
+    
+    div.ftrWrap footer {
+        width: 100%;
+        padding: 30px 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    div.ftrWrap footer .fl p {
+        display: none;
+    }
+    div.ftrWrap footer .fm{
+        width: 50%;
+    }
+    div.ftrWrap footer .fr{
+        display: none;
+    } 
+    
+    
+}

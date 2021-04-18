@@ -11,13 +11,13 @@
   div.mnWrap main header h4 {
     display: none;
   }
-
   div.cnt01 section {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     row-gap: 0px;
   }
   div.cnt01 section article {
-    width: calc(50% - 20px);
+    width: 50%;
   }
   div.cnt01 section article .image {
     height: 200px;
@@ -25,7 +25,6 @@
   div.cnt01 section article .texts h2 {
     font-size: 20px;
   }
-
   div.cntWrap .content.cnt02 {
     margin-top: 80px;
   }
@@ -43,7 +42,6 @@
   div.cntWrap .content.cnt02 section article .texts {
     display: none;
   }
-
   div.cntWrap .content.cnt03 {
     margin-top: 190px;
   }
@@ -99,7 +97,6 @@
   div.cntWrap .content.cnt04 .btn {
     margin-right: 20px;
   }
-
   div.bnrWrap {
     margin-top: 80px;
     height: 380px;
@@ -123,6 +120,7 @@
     height: 500px;
   }
 }
+
 @media (min-width: 0) and (max-width: 420px) {
   div.mnWrap {
     height: 400px;
@@ -134,22 +132,22 @@
     width: 100%;
   }
   div.mnWrap main header h2 {
-    font-size: 26px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 30px;
   }
   div.mnWrap main header h4 {
     display: none;
   }
-
   div.cntW01 div.cnt01 {
     margin-top: -40px;
   }
   div.cntW01 div.cnt01 section {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     row-gap: 0px;
   }
   div.cntW01 div.cnt01 section article {
-    width: calc(50% - 20px);
+    width: 50%;
   }
   div.cntW01 div.cnt01 section article .image {
     height: 150px;
@@ -157,7 +155,9 @@
   div.cntW01 div.cnt01 section article .texts h2 {
     font-size: 15px;
   }
-
+  div.cntW01 div.cnt01 section article .texts p {
+    font-size: 20px;
+  }
   div.cntWrap .content.cnt02 {
     margin-top: 80px;
   }
@@ -178,9 +178,11 @@
   div.cntWrap .content.cnt02 section article .texts {
     display: none;
   }
-
   div.cntWrap .content.cnt03 {
     margin-top: 0px;
+  }
+  div.cntWrap .content.cnt03 header h2 {
+    width: 60%;
   }
   div.cntWrap .content.cnt03 section {
     margin-top: 30px;
@@ -237,19 +239,17 @@
   div.cntWrap .content.cnt04 .btn {
     text-align: center;
   }
-
   div.bnrWrap {
     margin-top: 80px;
     height: 300px;
   }
   div.bnrWrap .bnr01 header {
     margin: auto;
-    height: 400px;
     top: 0;
     bottom: 0;
     left: 20%;
     width: 80%;
-    height: 380px;
+    height: 100px;
   }
   div.bnrWrap .bnr01 header h3 {
     font-size: 15px;
@@ -257,6 +257,9 @@
   }
   div.bnrWrap .bnr01 header p {
     display: none;
+  }
+  div.bnrWrap .bnr01 span {
+    right: 30px;
   }
   div.bnrWrap .bnr01 section .image {
     width: 100%;
@@ -266,6 +269,7 @@
     padding-top: 80px;
   }
   div.bnrWrap .bnr02 header h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
-}/*# sourceMappingURL=mob_sub02.css.map */
+}
+/*# sourceMappingURL=mob_sub02.css.map */
