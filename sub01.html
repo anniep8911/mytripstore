@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" style="user-select: auto;">
-    <title>Document</title>
+    <title>Trip Store</title>
+    <link rel="shortcut icon" href="./image/logo.png">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sub01.css">
     <link rel="stylesheet" href="css/mob_sub01.css">
-    <script src="js/common.js"></script>
 </head>
 
 <body>
-    <? include 'inc/head.html' ?>
+    <div class="hdrWrap"></div>
     <div class="mnWrap"></div>
     <div class="bnrWrap bntW01">
         <div class="banner bnr01">
@@ -23,8 +23,8 @@
             <section>
                 <div class="sl">
                     <div class="ch">
-                        <input type="checkbox" name="m" id="m">
-                        <input type="checkbox" name="f" id="f">
+                        <input type="radio" name="s" id="m">
+                        <input type="radio" name="s" id="f">
                         <h3>성별을 알려주세요.</h3>
                         <div class="male">
                             <label for="m">
@@ -70,10 +70,10 @@
                 </div>
                 <div class="sr">
                     <div class="ch">
-                        <input type="checkbox" name="fir" id="fir">
-                        <input type="checkbox" name="sec" id="sec">
-                        <input type="checkbox" name="thir" id="thir">
-                        <input type="checkbox" name="four" id="four">
+                        <input type="radio" name="age" id="fir">
+                        <input type="radio" name="age" id="sec">
+                        <input type="radio" name="age" id="thir">
+                        <input type="radio" name="age" id="four">
                         <h3>나이를 알려주세요.</h3>
                         <div class="first">
                             <label for="fir">
@@ -104,7 +104,7 @@
                             </label>
                         </div>
                     </div>
-                <div class="selects">
+                    <div class="selects">
                         <div class="days">
                             <i class="fas fa-calendar-alt"></i>
                             <select>
@@ -135,7 +135,7 @@
             <p><i class="fas fa-angle-double-down"></i></p>
         </div>
     </div>
-
+    
     <div class="cntWrap">
         <div class="content cnt01">
             <header>
@@ -150,7 +150,7 @@
             </section>
         </div>
     </div>
-
+    
     <div class="cntWrap cntW02">
         <div class="content cnt02">
             <header>
@@ -162,7 +162,7 @@
             </section>
         </div>
     </div>
-
+    
     <div class="cntWrap">
         <div class="content cnt03">
             <header>
@@ -212,7 +212,7 @@
             </section>
         </div>
     </div>
-
+    
     <div class="bnrWrap bnrW02">
         <div class="banner bnr02">
             <header>
@@ -223,8 +223,8 @@
             </header>
         </div>
     </div>
-
-    <? include 'inc/foot.html' ?>
+    <div class="ftrWrap"></div>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
