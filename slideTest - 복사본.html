@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        div.btn{
+            font-size: 50px;
+            cursor: pointer;
+        }
+        div.slideView{
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
+           /* overflow: hidden; */
+           margin-top: 20px;
+           /* outline: 2px solid blue; */
+           height: 500px;
+        }
+        div.slideGr{
+            width: 200%;
+            display: flex;
+            justify-content: space-around;
+            transform: translateX(-16.66%);
+        }
+        article{
+            width: calc(100% / 6 );
+            transition: transform 0.5s, margin-top 0.5s, z-index 0.5s;
+           
+        }
+        article:nth-child(3){
+            transform: translate3d(20px,20px,20px) perspective(1000px);
+            z-index: 999;
+
+        }
+        
+        .image{
+            width: 100%;
+            height: 250px;
+            /* background-color: #fc0; */
+            font-size: 32px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .image.i1{
+            background-image: url('./image/pic22.jpg');
+        }
+        .image.i2{
+            background-image: url('./image/pic23.jpg');
+        }
+        .image.i3{
+            background-image: url('./image/pic24.jpg');
+        }
+        .image.i4{
+            background-image: url('./image/pic25.jpg');
+        }
+        .image.i5{
+            background-image: url('./image/pic26.jpg');
+        }
+        .image.i6{
+            background-image: url('./image/pic27.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="slideView">
+        <div class="slideGr">
+            <article>
+                <div class="image i6">6</div>
+            </article>
+            <article>
+                <div class="image i1">1</div>
+            </article>
+            <article>
+                <div class="image i2">2</div>
+            </article>
+            <article>
+                <div class="image i3">3</div>
+            </article>
+            <article>
+                <div class="image i4">4</div>
+            </article>
+            <article>
+                <div class="image i5">5</div>
+            </article>
+        </div>
+    </div>
+    <div class="btn">레프트</div>
+    <div class="btn">라이트</div>
+    <script>
+       const btn = document.querySelectorAll('div.btn');
+       const artGr = document.querySelector('.slideGr');
+       const art = document.querySelectorAll('article');
+       let cnt=0;
+       let pop=0;
+       let flag =false;
+       btn[0].onclick=()=>{
+           if(!flag){
+               cnt++;
+               flag=true;    
+               cnt=cnt%art.length;
+               pop=cnt+2;
+               pop=pop%art.length;
+
+               art.forEach(e=>{
+                   e.style.transform = `translate(-${cnt*100}%)`;     
+                   e.style.zIndex = `0`;     
+               });
+               for(var i =0; i<cnt; i++){
+                   art[i].style.transform = `translate(${(6-cnt)*100}%)`;
+                }     
+               
+               if(cnt-1<0) {
+                   art[5].style.opacity=0;
+                   setTimeout(()=>{art[5].style.opacity=1; flag=false;},500);
+               }else{
+                   art[cnt-1].style.opacity=0;
+                   setTimeout(()=>{art[cnt-1].style.opacity=1; flag=false;},500);
+               }
+               
+               if(cnt>=4){
+                   art[pop].style.transform = `translate(${(2-pop)*100}%,50%) scale(1.2)`;    
+                }else{
+                    art[pop].style.transform = `translate(-${cnt*100}%,50%) scale(1.2)`;
+                }
+                art[pop].style.zIndex = 999;    
+
+            }
+        }       
+       btn[1].onclick=()=>{
+           if(!flag){
+               flag=true;
+               if(cnt<=0) cnt=art.length;
+               cnt--;
+               console.log(cnt);   
+               cnt=cnt%art.length;
+               pop=cnt+2;
+               pop=pop%art.length;
+               art.forEach(e=>{
+                   e.style.transform = `translate(-${cnt*100}%)`;     
+                   e.style.zIndex = `0`;     
+               });
+               for(var i =0; i<cnt; i++){
+                   art[i].style.transform = `translate(${(6-cnt)*100}%)`;
+                }     
+               
+               if(cnt<0) {
+                   art[5].style.opacity=0;
+                   setTimeout(()=>{art[5].style.opacity=1; flag=false;},500);
+               }else{
+                   art[cnt].style.opacity=0;
+                   setTimeout(()=>{art[cnt].style.opacity=1; flag=false;},500);
+               }
+               
+               if(cnt>=4){
+                   art[pop].style.transform = `translate(${(2-pop)*100}%,50%) scale(1.2)`;    
+                }else{
+                    art[pop].style.transform = `translate(-${cnt*100}%,50%) scale(1.2)`;
+                }
+                art[pop].style.zIndex = 999;    
+
+            }
+        }       
+    </script>
+</body>
+</html>
